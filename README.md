@@ -13,28 +13,28 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  LazyEyes allows you to, on the click of a button, highlight the focal point of every word on a page you're reading, so that you can read at a naturally faster pace. 
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  For anyone who wants to read faster with zero effort
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  LazyEyes is a readability app that makes articles/essays/stories found on the web easier to read. It does this by highting the focal point of every word for your eyeballs ahead of time.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  Read faster, and save time.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  LazyEyes allows you to read faster by allowing your brain to recognize words faster. Normally, your brain, in coordination with your eyeballs, scans every word to find a centered focal point before determining what the word actually is. Highlighting the focal point for the user ahead of time, saves your brain from unnecessary strain. 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  LazyEyes is great for anyone who reads things on the internet, and values their time highly.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Download the app and convert pages to LazyEye format with the click of a button.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  With LazyEyes I breeze through articles. - John Guy
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Interested in reading faster? Go download LazyEyes.
