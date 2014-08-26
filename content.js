@@ -25,25 +25,25 @@ var findMiddleLetter = function(string){
 	return answer;
 }
 
-var roboEye = function(string){
+var roboEye = function(node){
+	var string = node.text();
 	var sentence = string.split(' ');
 	for(var i = 0; i<sentence.length; i++){
 		sentence[i] = findMiddleLetter(sentence[i])
 	}
-	return sentence.join(' ');
+
+	node.html(sentence.join(' '));
 }
 
 
 
-// debug(roboEye('hello there Jim'))
-// debug(findMiddleLetter('helllll'))
 
 $(document).ready(function(){
 	var elements = $('html');
 	var recurse = function(node,callback){
 		if(node.children().length===0){
-			// console.log(node.css({'font-weight':'bold'}));
-			node.html(callback(node.text()))
+			// node.html(roboEye(node.text())) -->this was before callbacks
+			callback(node);
 		} else {
 			for(var i = 0; i <node.children().length;i++){
 				console.log(node.children()[i])
