@@ -13,28 +13,28 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
  -->
  
 ## Heading ##
-  LazyEyes allows you to, on the click of a button, highlight the focal point of every word on a page you're reading, so that you can read at a naturally faster pace. 
+  RoboEye allows you to, on the click of a button, highlight the focal point of every word on a page you're reading, so that you can read at a naturally faster pace. 
 
 ## Sub-Heading ##
   For anyone who wants to read faster with zero effort
 
 ## Summary ##
-  LazyEyes is a readability app that makes articles/essays/stories found on the web easier to read. It does this by highting the focal point of every word for your eyeballs ahead of time.
+  RoboEye is a readability app that makes articles/essays/stories found on the web easier to read. It does this by highting the focal point of every word for your eyeballs ahead of time.
 
 ## Problem ##
   Read faster, and save time.
 
 ## Solution ##
-  LazyEyes allows you to read faster by allowing your brain to recognize words faster. Normally, your brain, in coordination with your eyeballs, scans every word to find a centered focal point before determining what the word actually is. Highlighting the focal point for the user ahead of time, saves your brain from unnecessary strain. 
+  RoboEye allows you to read faster by allowing your brain to recognize words faster. Normally, your brain, in coordination with your eyeballs, scans every word to find a centered focal point before determining what the word actually is. Highlighting the focal point for the user ahead of time, saves your brain from unnecessary strain. 
 
 ## Quote from You ##
-  LazyEyes is great for anyone who reads things on the internet, and values their time highly.
+  RoboEye is great for anyone who reads things on the internet, and values their time highly.
 
 ## How to Get Started ##
-  Download the app and convert pages to LazyEye format with the click of a button.
+  Download the app and convert pages to RoboEye format with the click of a button.
 
 ## Customer Quote ##
-  With LazyEyes I breeze through articles. - John Guy
+  With RoboEye I breeze through articles. - John Guy
 
 ## Closing and Call to Action ##
-  Interested in reading faster? Go download LazyEyes.
+  Interested in reading faster? Go download RoboEye.
