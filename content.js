@@ -43,12 +43,13 @@ var checkUrbanForWord = function(config){
 	if(!config.ifFound) { throw new Error('needs an ifFound property'); }
 
 	var word = config['word'];
-	console.log('insideSpanWrap: '+word);
+	// console.log('insideSpanWrap: '+word);
 	var onSuccess = function(data){
-		// console.log(word)
+		// console.log(data)
+		var link = data.list[0].permalink;
 		// varword = data.list[0].word;
 		if(data.result_type === 'exact'){
-			config.ifFound(word);
+			config.ifFound(word,link);
 		}
 	};
 	$.ajax({
@@ -60,16 +61,17 @@ var checkUrbanForWord = function(config){
 var urbanDic = function(node){
 	var string = node.text();
 	var sentence = node.text().split(' ');
-	console.log(sentence);
+	// console.log(sentence);
 	for(var i=0;i<sentence.length;i++){
 		(function(i){	
 			if(sentence[i].length>6){
 				checkUrbanForWord({
-					word: sentence[i],
-					ifFound: function(word) {
-						sentence[i] = '<span style="font-family: Comic Sans MS">'+word+'</span>';
+					word: sentence[i], 
+					ifFound: function(word,link) {
+						sentence[i] = '<a href="'+link+'">'+word+'</a>'
+						// sentence[i] = '<span style="font-family: Comic Sans MS; color: green">'+word+'</span>';
 						node.html(sentence.join(' '));
-						console.log('sentence: '+sentence);
+						// console.log('sentence: '+sentence);
 					}
 				})
 				// console.log(sentence[i]);
