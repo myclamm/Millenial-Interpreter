@@ -35,7 +35,9 @@ var roboEye = function(node){
 	node.html(sentence.join(' '));
 }
 
-
+var comicSansify = function(node){
+	node.css({"font-family":"Comic Sans MS"});
+}
 
 
 $(document).ready(function(){
