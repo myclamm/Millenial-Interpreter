@@ -41,34 +41,67 @@ var comicSansify = function(node){
 
 var checkUrbanForWord = function(config){
 	if(!config.ifFound) { throw new Error('needs an ifFound property'); }
-
 	var word = config['word'];
-	// console.log('insideSpanWrap: '+word);
+	if(punctuationCheck(word)){
+		var newWord = word.split('');
+		var punc = newWord.pop();
+		newWord = newWord.join('');
+	} else {
+		newWord = word;
+	}
 	var onSuccess = function(data){
-		// console.log(data)
-		var link = data.list[0].permalink;
+		console.log('checking...'+config.word+"..."+data.result_type,data)
+
 		// varword = data.list[0].word;
 		if(data.result_type === 'exact'){
+			var link = data.list[0].permalink;
 			config.ifFound(word,link);
 		}
 	};
 	$.ajax({
-		url:"https://mashape-community-urban-dictionary.p.mashape.com/define?term="+word,
+		url:"https://mashape-community-urban-dictionary.p.mashape.com/define?term="+newWord,
 		headers:{"X-Mashape-Key":"2g94OmfCpqmsh4KJHOCcXU4XwrI2p1ofUWnjsnV9AsUj3162Pj"}
 	}).done(onSuccess);
+}
+
+var punctuationCheck = function(string){
+	if(string.length>2){	
+		if(string[string.length-1].match(/[,.?!]+/)){
+			return true;
+		}else {
+			return false;
+		}
+	};
 }
 
 var urbanDic = function(node){
 	var string = node.text();
 	var sentence = node.text().split(' ');
 	// console.log(sentence);
+	// for(var i = 0; i<sentence.length;i++){
+	// 	if(punctuationCheck(sentence[i])){
+	// 		var newWord = sentence[i].split('')
+	// 		var punc = newWord.pop();
+	// 		sentence[i] = newWord.join('');
+	// 		sentence.splice(i+1,0,punc);
+	// 	}
+
+	// }
 	for(var i=0;i<sentence.length;i++){
 		(function(i){	
 			if(sentence[i].length>6){
+				// console.log('checking...'+sentence[i])
 				checkUrbanForWord({
 					word: sentence[i], 
 					ifFound: function(word,link) {
-						sentence[i] = '<a href="'+link+'">'+word+'</a>'
+						if(punctuationCheck(word)){
+							var newWord = word.split('');
+							var punc = newWord.pop();
+							word = newWord.join('');
+							sentence[i] = '<a href="'+link+'" style="color: green">'+word+'</a>'+punc;
+						}else {
+							sentence[i] = '<a href="'+link+'">'+word+'</a>';
+						}
 						// sentence[i] = '<span style="font-family: Comic Sans MS; color: green">'+word+'</span>';
 						node.html(sentence.join(' '));
 						// console.log('sentence: '+sentence);
@@ -83,15 +116,20 @@ var urbanDic = function(node){
 	
 }
 
+//Ajax API tester:
+
+// console.log('hi');
+// var word = 'Delaware'
+// $.ajax({
+// 	url:"https://mashape-community-urban-dictionary.p.mashape.com/define?term="+word,
+// 	headers:{"X-Mashape-Key":"2g94OmfCpqmsh4KJHOCcXU4XwrI2p1ofUWnjsnV9AsUj3162Pj"}
+// }).done(function(data){
+// 	console.log('delaware...'+data.result_type);
+// 	console.log(data);
+// })
+
 
 $(document).ready(function(){
-	var word = 'tomato'
-	$.ajax({
-		url:"https://mashape-community-urban-dictionary.p.mashape.com/define?term="+word,
-		headers:{"X-Mashape-Key":"2g94OmfCpqmsh4KJHOCcXU4XwrI2p1ofUWnjsnV9AsUj3162Pj"}
-	}).done(function(data){
-		// console.log(data.result_type==='exact');
-	})
 	var elements = $('html');
 	var recurse = function(node,callback){
 		if(node.children().length===0){
@@ -107,3 +145,4 @@ $(document).ready(function(){
 	recurse($('html'),urbanDic);
 
 })
+
