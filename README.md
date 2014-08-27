@@ -13,28 +13,28 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
  -->
  
 ## Heading ##
-  RoboEye allows you to, on the click of a button, highlight the focal point of every word on a page you're reading, so that you can read at a naturally faster pace. 
+  MillenialInterpreter 1.0
 
 ## Sub-Heading ##
-  For anyone who wants to read faster with zero effort
+  For anyone who needs help interpreting colloquialisms they find on the internet, or anyone who likes to read layman definitions of words.
 
 ## Summary ##
-  RoboEye is a readability app that makes articles/essays/stories found on the web easier to read. It does this by highting the focal point of every word for your eyeballs ahead of time.
+  Tired of reaching for a dictionary every time you encounter a word you don't know? Confused by all the slang those young kids are dumping all over the interwebs? Millenial Interpreter is just for you. With Millenial Interpreter you can access definitions of all the words and colloquialisms you find on the internet with a click of the button. While reading, simply click the word you don't know to be brought to the urbandictionary.com definition. 
 
 ## Problem ##
-  Read faster, and save time.
+  This app brings users quickly up-to-speed on cultural slang by turning every webpage into a one-click urban dictionary.
 
 ## Solution ##
-  RoboEye allows you to read faster by allowing your brain to recognize words faster. Normally, your brain, in coordination with your eyeballs, scans every word to find a centered focal point before determining what the word actually is. Highlighting the focal point for the user ahead of time, saves your brain from unnecessary strain. 
+  MillenialInterpreter queries the urbandictionary.com api for every word on the webpage that you're currently browsing, and dynamically changes the word into a hyperlink to the urbandictionary.com definition if the word is catalogued.
 
 ## Quote from You ##
-  RoboEye is great for anyone who reads things on the internet, and values their time highly.
+  No longer be intimidated by all those hippity hoppity slang words!
 
 ## How to Get Started ##
-  Download the app and convert pages to RoboEye format with the click of a button.
+  Download the chrome extension and simply click the MI button on any page that you wish to interpret.
 
 ## Customer Quote ##
-  With RoboEye I breeze through articles. - John Guy
+  I finally understand my kid's facebook posts! - John Guy
 
 ## Closing and Call to Action ##
-  Interested in reading faster? Go download RoboEye.
+  What're you waiting for, go learn new words.
