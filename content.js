@@ -98,9 +98,9 @@ var urbanDic = function(node){
 							var newWord = word.split('');
 							var punc = newWord.pop();
 							word = newWord.join('');
-							sentence[i] = '<a href="'+link+'" style="color: green">'+word+'</a>'+punc;
+							sentence[i] = '<a href="'+link+'" style="color: green; text-decoration: none">'+word+'</a>'+punc;
 						}else {
-							sentence[i] = '<a href="'+link+'">'+word+'</a>';
+							sentence[i] = '<a href="'+link+'" style="color: green; text-decoration: none">'+word+'</a>';
 						}
 						// sentence[i] = '<span style="font-family: Comic Sans MS; color: green">'+word+'</span>';
 						node.html(sentence.join(' '));
