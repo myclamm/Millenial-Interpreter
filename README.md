@@ -1,6 +1,6 @@
-# Project Name #
+# Millenial Interpreter #
 
- Millenial Interpreter
+ 
 
 ## Summary ##
   Tired of reaching for a dictionary every time you encounter a word you don't know? Confused by all the slang those young kids are dumping all over the interwebs? With Millenial Interpreter you can access definitions of all the words and colloquialisms you find on the internet with the click of a button. While reading, simply click the word you don't know to be brought to the urbandictionary.com definition. 
